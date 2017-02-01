@@ -3,4 +3,11 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: a39HpdP5fusVtXk1ATZ0o+2/9jxs/o1ijZ30GPU6eYvK6tyCeS8uKBYU++Frx3g9HiZRKPCte5Z+nyQGTSrV8rpDk8NpfQ5ajHi2denxYu42EJOPodijxw7Roo+pJgAobt6xwjYGPbRbbTz+C5FbWepFdnd1ABf+vBbujiov47pb8haZCRda89PCvMKFIPTFibcH4YQAitMqALHiT3Zt4NQmUSnojGRaAxNyXtMmfOPqim3Bzzo7+q1GtNEFup1praKgQuuLDp/uQyKy6WKQ0m0kmMRtq2A9zz+J/d5wd9m/zSa4F13b/+/SfCZXlhAeFLVXppEGZb6C3DOYVRNW2ekRz5lZ2TfAmMC7yFIgwfQ5quepBVw4t4YkUzwt7X06sV2366HSDMrbKpyWtRuyYDb+t3OfYxvjFMFmsMOwg/zXAhJUdfdijlq+rZ06QnrKqYqrqiKxCAY7+soNevDqHDfnnhiNGVHMg6D9hpEeCDJMSOgOxKCAxwv0EBDvRTAO/0LUJeKp+bJ/6Qmm9k41bake/4ieS6bqDb+JTWpbzN0RcelI1TWGEphXDAbVbHVBBoSw4LCo4CUVFiwPMXB1Kr036naq2F7exii/9VKtIR8QbBd1KOP+ayw1TiwoPtizt4MavfXXsATiBi3u5LtuAReBMjm9lFho7i6NGZrq88Y=
+  app: jili-addressbook
+  on:
+    repo: dindanmao/addressbook
+    branch: todo_tasks
