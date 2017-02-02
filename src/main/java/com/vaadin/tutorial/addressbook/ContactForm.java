@@ -95,6 +95,7 @@ public class ContactForm extends FormLayout {
         // Place to call business logic.
         Notification.show("Cancelled", Type.TRAY_NOTIFICATION);
         getUI().contactList.select(null);
+        getUI().refreshContacts();
     }
 
     void edit(Contact contact) {
